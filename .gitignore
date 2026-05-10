@@ -1,0 +1,12 @@
+# Evita subir la API Key
+.env
+
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de log
+*.log
+
+# Vercel y sistemas de cache locales
+.vercel/
+dist/

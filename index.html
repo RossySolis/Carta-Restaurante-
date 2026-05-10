@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta - Los Sabores de mi Tierra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #8b4513;
+            /* Color de respaldo */
+            background-image: url("../imagenes/manta.jpg");
+            background-repeat: repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h1,
+        h2,
+        h3,
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="text-stone-800 antialiased py-8 px-4">
+
+    <!-- Contenedor Principal de la Carta -->
+    <div class="max-w-3xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border border-stone-200">
+
+        <!-- Encabezado -->
+        <header class="bg-[#8b4513] text-white text-center py-12 px-6 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+                <img src="imagenes/portadafondo.jpg" alt="Fondo rústico de madera" class="w-full h-full object-cover">
+            </div>
+            <div class="relative z-10 flex flex-col items-center">
+                <!-- LOGO HUANCAYO -->
+                <svg class="w-32 h-32 mb-4 drop-shadow-xl" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="95" fill="#f4ece1" stroke="#d97706" stroke-width="4" />
+                    <!-- Nevado / Montañas -->
+                    <path d="M10 130 L55 70 L100 115 L145 60 L190 130" fill="none" stroke="#8b4513" stroke-width="8"
+                        stroke-linejoin="round" />
+                    <!-- Sol Inti -->
+                    <circle cx="100" cy="65" r="18" fill="#f59e0b" />
+                    <!-- Olla de barro -->
+                    <path d="M50 130 Q100 200 150 130 Z" fill="#d97706" stroke="#8b4513" stroke-width="4" />
+                    <rect x="40" y="125" width="120" height="10" fill="#8b4513" rx="4" />
+                    <!-- Guarda con motivo andino -->
+                    <path d="M60 155 L70 145 L80 155 L90 145 L100 155 L110 145 L120 155 L130 145 L140 155" fill="none"
+                        stroke="#f4ece1" stroke-width="3" stroke-linejoin="round" />
+                </svg>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-wide mb-2">Los Sabores de mi Tierra</h1>
+                <p class="text-orange-200 text-lg italic font-serif-custom">Tradición, sazón y corazón en cada plato</p>
+                <p class="text-black-300 text-lg italic font-serif-custom">Con lo mejor de la música peruana </p>
+                <h1 class="text-4xl md:text-5xl italic tracking-wide mb-2">Show en vivo </h1>
+            </div>
+        </header>
+
+        <!-- Contenido del Menú -->
+        <div class="p-6 md:p-10 space-y-12">
+
+            <!-- SECCIÓN: PLATILLO ESTRELLA -->
+            <section>
+                <div
+                    class="relative bg-green-50 border-2 border-green-600 rounded-xl p-6 shadow-md transform transition duration-300 hover:scale-[1.03]">
+                    <div
+                        class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#8b4513] text-white px-4 py-1 rounded-full text-sm font-semibold tracking-wider flex items-center gap-1 shadow-lg z-10">
+                        <i class="ph-fill ph-star text-yellow-400"></i>
+                        ¡NUESTRO PLATILLO ESTRELLA!
+                        <i class="ph-fill ph-star text-yellow-400"></i>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-6 mt-4 border-b border-orange-200 pb-4 mb-4">
+                        <div class="w-full md:w-1/3 shrink-0">
+                            <!-- Foto de Pachamanca/Plato similar en piedra -->
+                            <img src="imagenes/pachamanca.jpg" alt="Pachamanca a la tierra"
+                                class="w-full h-48 object-cover rounded-lg shadow-md border-2 border-orange-200">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center">
+                            <div class="flex justify-between items-start mb-2">
+                                <h2 class="text-2xl font-bold text-[#8b4513] font-serif-custom">Pachamanca a la Tierra
+                                </h2>
+                                <span class="text-3xl font-bold text-[#8b4513]">S/ 50.00</span>
+                            </div>
+                            <p class="text-stone-600 text-sm md:text-base leading-relaxed mb-3">
+                                Preparada con el auténtico sabor de nuestra tierra. Incluye papa, camote dulce, habas
+                                frescas y una rica y deliciosa humita calientita.
+                            </p>
+                            <div>
+                                <span
+                                    class="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-md font-medium">Sabor
+                                    Mixto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN: PLATOS DE FONDO -->
+            <section>
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="ph ph-fork-knife text-3xl text-[#8b4513]"></i>
+                    <h2 class="text-3xl font-bold text-[#8b4513] font-serif-custom">Platos de Fondo</h2>
+                    <div class="h-px bg-stone-300 flex-1 ml-4"></div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Caja China -->
+                    <div
+                        class="flex flex-col bg-orange-50 sm:flex-row gap-4 items-start sm:items-center border-b border-stone-100 pb-4 hover:bg-stone-50 p-2 rounded transition-colors">
+                        <img src="imagenes/caja-china.jpg" alt="Cerdo a la Caja China"
+                            class="w-full sm:w-24 h-40 sm:h-24 object-cover rounded-lg shadow-sm shrink-0">
+                        <div class="flex-1 pr-4">
+                            <h3 class="text-xl font-bold text-stone-800 font-serif-custom">Caja China</h3>
+                            <p class="text-stone-500 text-sm mt-1">Cerdo horneado a la perfección con la piel galleta.
+                                Servido con papa, mote y sarsa criolla.</p>
+                        </div>
+                        <div class="mt-2 sm:mt-0 font-bold text-xl text-[#8b4513]">S/ 50.00</div>
+                    </div>
+
+                    <!-- Arroz con Pato -->
+                    <div
+                        class="flex flex-col bg-orange-50 sm:flex-row gap-4 items-start sm:items-center border-b border-stone-100 pb-4 hover:bg-stone-50 p-2 rounded transition-colors">
+                        <img src="imagenes/arroz con pato.jpg" alt="Arroz con Pato"
+                            class="w-full sm:w-24 h-40 sm:h-24 object-cover rounded-lg shadow-sm shrink-0">
+                        <div class="flex-1 pr-4">
+                            <h3 class="text-xl font-bold text-stone-800 font-serif-custom">Arroz con Pato</h3>
+                            <p class="text-stone-500 text-sm mt-1">Jugoso y lleno de sabor, acompañado de su riquísima
+                                sarsita criolla fresca.</p>
+                        </div>
+                        <div class="mt-2 sm:mt-0 font-bold text-xl text-[#8b4513]">S/ 50.00</div>
+                    </div>
+
+                    <!-- Chicharrón de Chancho -->
+                    <div
+                        class="flex flex-col bg-orange-50 sm:flex-row gap-4 items-start sm:items-center border-b border-stone-100 pb-4 hover:bg-stone-50 p-2 rounded transition-colors">
+                        <img src="imagenes/chicharrones.jpg" alt="Chicharrón de Chancho"
+                            class="w-full sm:w-24 h-40 sm:h-24 object-cover rounded-lg shadow-sm shrink-0">
+                        <div class="flex-1 pr-4">
+                            <h3 class="text-xl font-bold text-stone-800 font-serif-custom">Chicharrón de Chancho</h3>
+                            <p class="text-stone-500 text-sm mt-1">Trozos de cerdo dorados y crujientes. Acompañado de
+                                mote, camote, cancha tostada y sarsa criolla.</p>
+                        </div>
+                        <div class="mt-2 sm:mt-0 font-bold text-xl text-[#8b4513]">S/ 50.00</div>
+                    </div>
+
+                    <!-- Caldo de Mote -->
+                    <div
+                        class="flex flex-col bg-orange-50 sm:flex-row gap-4 items-start sm:items-center border-b border-stone-100 pb-4 hover:bg-stone-50 p-2 rounded transition-colors">
+                        <img src="imagenes/caldomote.jpg" alt="Caldo de Mote"
+                            class="w-full sm:w-24 h-40 sm:h-24 object-cover rounded-lg shadow-sm shrink-0">
+                        <div class="flex-1 pr-4">
+                            <h3 class="text-xl font-bold text-stone-800 font-serif-custom">Riquísimo Caldo de Mote</h3>
+                            <p class="text-stone-500 text-sm mt-1">Un caldo contundente y levantamuertos, cocinado a
+                                fuego lento con mucha sustancia.</p>
+                        </div>
+                        <div class="mt-2 sm:mt-0 font-bold text-xl text-[#8b4513]">S/ 25.00</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN: BEBIDAS -->
+            <section>
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="ph ph-brandy text-3xl text-purple-800"></i>
+                    <h2 class="text-3xl font-bold text-purple-900 font-serif-custom">Nuestras Bebidas</h2>
+                    <div class="h-px bg-stone-300 flex-1 ml-4"></div>
+                </div>
+
+                <div class="bg-purple-50 rounded-xl p-5 border border-purple-100">
+                    <!-- Chicha Morada -->
+                    <div
+                        class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-6 border-b border-purple-200 pb-6 hover:bg-purple-100/50 p-2 rounded transition-colors">
+                        <img src="imagenes/chichamorada.jpg" alt="Chicha Morada"
+                            class="w-full sm:w-24 h-40 sm:h-24 object-cover rounded-lg shadow-sm shrink-0">
+                        <div class="flex-1 pr-4">
+                            <h3 class="text-xl font-bold text-purple-900 font-serif-custom flex items-center gap-2">
+                                Chicha Morada
+                                <i class="ph-fill ph-drop text-purple-600 text-lg"></i>
+                            </h3>
+                            <p class="text-stone-600 text-sm mt-1">Refresco tradicional hecho a base de maíz morado
+                                hervido con frutas y especias naturales. ¡Súper refrescante!</p>
+                        </div>
+                        <div class="mt-4 sm:mt-0 flex flex-col sm:items-end gap-2 shrink-0 w-full sm:w-auto">
+                            <div
+                                class="bg-white px-3 py-1 rounded shadow-sm border border-purple-100 flex items-center gap-3 w-full sm:w-auto justify-between">
+                                <span class="text-sm text-stone-600 font-medium">Jarra (1L)</span>
+                                <span class="font-bold text-purple-900">S/ 15.00</span>
+                            </div>
+                            <div
+                                class="bg-white px-3 py-1 rounded shadow-sm border border-purple-100 flex items-center gap-3 w-full sm:w-auto justify-between">
+                                <span class="text-sm text-stone-600 font-medium">Vaso</span>
+                                <span class="font-bold text-purple-900">S/ 5.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Limonada Frozen -->
+                    <div
+                        class="flex flex-col sm:flex-row gap-4 items-start sm:items-center hover:bg-purple-100/50 p-2 rounded transition-colors">
+                        <img src="imagenes/limonadafrozen.jpg" alt="Limonada Frozen"
+                            class="w-full sm:w-24 h-40 sm:h-24 object-cover rounded-lg shadow-sm shrink-0">
+                        <div class="flex-1 pr-4">
+                            <h3 class="text-xl font-bold text-purple-900 font-serif-custom flex items-center gap-2">
+                                Limonada Frozen
+                                <i class="ph-fill ph-snowflake text-purple-600 text-lg"></i>
+                            </h3>
+                            <p class="text-stone-600 text-sm mt-1">Refrescante limonada licuada con hielo frappé,
+                                perfecta para acompañar tus platos favoritos.</p>
+                        </div>
+                        <div class="mt-4 sm:mt-0 flex flex-col sm:items-end gap-2 shrink-0 w-full sm:w-auto">
+                            <div
+                                class="bg-white px-3 py-1 rounded shadow-sm border border-purple-100 flex items-center gap-3 w-full sm:w-auto justify-between">
+                                <span class="text-sm text-stone-600 font-medium">Jarra (1L)</span>
+                                <span class="font-bold text-purple-900">S/ 18.00</span>
+                            </div>
+                            <div
+                                class="bg-white px-3 py-1 rounded shadow-sm border border-purple-100 flex items-center gap-3 w-full sm:w-auto justify-between">
+                                <span class="text-sm text-stone-600 font-medium">Vaso</span>
+                                <span class="font-bold text-purple-900">S/ 8.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN: COCTELERÍA Y BAR -->
+            <section>
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="ph ph-martini text-3xl text-emerald-800"></i>
+                    <h2 class="text-3xl font-bold text-emerald-900 font-serif-custom">Coctelería y Bar</h2>
+                    <div class="h-px bg-stone-300 flex-1 ml-4"></div>
+                </div>
+
+                <!-- Banner Día de la Madre y Promos -->
+                <div
+                    class="bg-gradient-to-r from-rose-100 to-pink-100 border-2 border-rose-300 rounded-xl p-5 mb-8 shadow-md transform hover:scale-[1.01] transition-transform">
+                    <div class="flex flex-col items-center text-center">
+                        <i class="ph-fill ph-flower-lotus text-4xl text-rose-500 mb-2 animate-bounce"></i>
+                        <h3 class="text-2xl font-bold font-serif-custom text-rose-900 mb-1">¡Especial del Día de la
+                            Madre!</h3>
+                        <p class="text-rose-800 text-base md:text-lg">Consulta a tu mozo (o a nuestro asistente
+                            <strong>El Huancaíno</strong>) por nuestras increíbles promociones en cócteles 🌸
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Clásicos Peruanos -->
+                    <div
+                        class="bg-emerald-50 rounded-xl overflow-hidden border border-emerald-100 shadow-sm flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=400"
+                            alt="" class="w-full h-32 object-cover">
+                        <div class="p-5 flex-1">
+                            <h3 class="text-lg font-bold text-emerald-900 mb-4 border-b border-emerald-200 pb-2">
+                                Clásicos Peruanos</h3>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
+                                <li
+                                    class="flex items-center gap-3 p-2 hover:bg-emerald-100/50 rounded-lg transition-colors border border-transparent hover:border-emerald-200">
+                                    <img src="imagenes/c-chilcano.jpg" alt=""
+                                        class="w-12 h-12 object-cover rounded-md shadow-sm">
+                                    <span class="text-stone-700 font-medium">Chilcano Clásico</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 p-2 hover:bg-emerald-100/50 rounded-lg transition-colors border border-transparent hover:border-emerald-200">
+                                    <img src="imagenes/c-perulibre.jpg" alt=""
+                                        class="w-12 h-12 object-cover rounded-md shadow-sm">
+                                    <span class="text-stone-700 font-medium">Perú Libre</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 p-2 hover:bg-emerald-100/50 rounded-lg transition-colors border border-transparent hover:border-emerald-200">
+                                    <img src="imagenes/c-piscosour.jpg" alt=""
+                                        class="w-12 h-12 object-cover rounded-md shadow-sm">
+                                    <span class="text-stone-700 font-medium">Pisco Sour</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 p-2 hover:bg-emerald-100/50 rounded-lg transition-colors border border-transparent hover:border-emerald-200">
+                                    <img src="imagenes/c-machupicchu.jpg" alt="[Image of Machu Picchu]"
+                                        class="w-12 h-12 object-cover rounded-md shadow-sm">
+                                    <span class="text-stone-700 font-medium">Machu Picchu</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 p-2 hover:bg-emerald-100/50 rounded-lg transition-colors border border-transparent hover:border-emerald-200">
+                                    <img src="imagenes/c-maracuyasour.jpg" alt=""
+                                        class="w-12 h-12 object-cover rounded-md shadow-sm">
+                                    <span class="text-stone-700 font-medium">Maracuyá Sour</span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-3 p-2 hover:bg-emerald-100/50 rounded-lg transition-colors border border-transparent hover:border-emerald-200">
+                                    <img src="imagenes/c-algarrobina.jpg" alt=""
+                                        class="w-12 h-12 object-cover rounded-md shadow-sm">
+                                    <span class="text-stone-700 font-medium">Algarrobina</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 flex flex-col">
+                        <!-- Internacionales -->
+                        <div class="bg-blue-50 rounded-xl overflow-hidden border border-blue-100 shadow-sm flex-1">
+                            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&q=80&w=400"
+                                alt="" class="w-full h-24 object-cover">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-blue-900 mb-4 border-b border-blue-200 pb-2">Clásicos
+                                    Internacionales</h3>
+                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-blue-100/50 rounded-lg transition-colors border border-transparent hover:border-blue-200">
+                                        <img src="imagenes/c-mojito.jpg" alt="[Image of Mojito]"
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Mojito</span>
+                                    </li>
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-blue-100/50 rounded-lg transition-colors border border-transparent hover:border-blue-200">
+                                        <img src="imagenes/c-cubalibre.jpg" alt="[Image of Cuba Libre]"
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Cuba Libre</span>
+                                    </li>
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-blue-100/50 rounded-lg transition-colors border border-transparent hover:border-blue-200">
+                                        <img src="imagenes/c-laguna azul.jpg" alt=""
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Laguna Azul</span>
+                                    </li>
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-blue-100/50 rounded-lg transition-colors border border-transparent hover:border-blue-200">
+                                        <img src="imagenes/c-surprise.jpg" alt="[Image of Sunrise]"
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Surprise</span>
+                                    </li>
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-blue-100/50 rounded-lg transition-colors border border-transparent hover:border-blue-200">
+                                        <img src="imagenes/c-piñacolada.jpg" alt="[Image of Piña Colada]"
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Piña Colada</span>
+                                    </li>
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-blue-100/50 rounded-lg transition-colors border border-transparent hover:border-blue-200">
+                                        <img src="imagenes/c-piscina.jpg" alt=""
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Piscina</span>
+                                    </li>
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-blue-100/50 rounded-lg transition-colors border border-transparent hover:border-blue-200">
+                                        <img src="imagenes/c-martini.jpg" alt=""
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Martini</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Vírgenes -->
+                        <div class="bg-rose-50 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-rose-900 mb-4 border-b border-rose-200 pb-2">Sin
+                                    Alcohol (Vírgenes)</h3>
+                                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-rose-100/50 rounded-lg transition-colors border border-transparent hover:border-rose-200">
+                                        <img src="imagenes/c-piñacolada.jpg" alt="[Image of Piña Colada Virgen]"
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Piña Colada Virgen</span>
+                                    </li>
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-rose-100/50 rounded-lg transition-colors border border-transparent hover:border-rose-200">
+                                        <img src="imagenes/c-algarrobina.jpg" alt=""
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Algarrobina Virgen</span>
+                                    </li>
+                                    <li
+                                        class="flex items-center gap-3 p-2 hover:bg-rose-100/50 rounded-lg transition-colors border border-transparent hover:border-rose-200">
+                                        <img src="imagenes/c-surprise.jpg" alt=""
+                                            class="w-10 h-10 object-cover rounded shadow-sm">
+                                        <span class="text-stone-700 font-medium text-sm">Surprise Virgen</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Pie de página -->
+        <footer class="bg-stone-800 text-stone-300 text-center py-8 px-4">
+            <div class="flex justify-center gap-4 mb-4">
+                <div class="flex flex-col items-center gap-1 opacity-80">
+                    <i class="ph ph-money text-2xl"></i>
+                    <span class="text-xs">Efectivo</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 opacity-80">
+                    <i class="ph ph-device-mobile text-2xl"></i>
+                    <span class="text-xs">Yape</span>
+                </div>
+                <div class="flex flex-col items-center gap-1 opacity-80">
+                    <i class="ph ph-credit-card text-2xl"></i>
+                    <span class="text-xs">Tarjeta (+5%)</span>
+                </div>
+            </div>
+            <p class="text-sm">
+                <a href="https://www.google.com/maps/search/?api=1&query=Las+Gaviotas+108,+Lurigancho-Chosica+15457"
+                    target="_blank" class="text-blue-600 underline">
+                    Calle las Gaviotas frente a la Piscina Paraiso de Huachipa
+                </a>
+            </p>
+            <p class="text-sm">
+                Reservas y Contratos para eventos:
+
+                <a href="https://wa.me/51931810266?text=Hola%20quiero%20escribirte" target="_blank"
+                    class="text-green-600 underline">
+                    931810266
+                </a>
+
+                -
+
+                <a href="https://wa.me/51989083813?text=Hola%20quiero%20escribirte" target="_blank"
+                    class="text-green-600 underline">
+                    989083813
+                </a>
+            </p>
+            <p class="text-sm">¡Buen provecho! Gracias por su preferencia.</p>
+            <p class="text-xs mt-1 opacity-70">Los Sabores de mi Tierra &copy; 2026</p>
+        </footer>
+    </div>
+
+    <!-- ✨ Asistente IA Gemini -->
+    <div id="chat-widget" class="fixed bottom-6 right-6 z-50 flex flex-col items-end font-sans">
+        <div id="chat-window"
+            class="hidden w-[90vw] sm:w-96 bg-white rounded-2xl shadow-2xl border border-stone-200 mb-4 overflow-hidden flex-col transition-all duration-300">
+            <div class="bg-[#8b4513] text-white p-4 flex justify-between items-center shadow-md z-10">
+                <div class="flex items-center gap-2">
+                    <i class="ph-fill ph-sparkle text-orange-300 text-xl"></i>
+                    <h3 class="font-bold font-serif-custom text-lg">El Huancaíno IA</h3>
+                </div>
+                <button id="close-chat" class="text-white hover:text-orange-200 transition-colors">
+                    <i class="ph ph-x text-xl"></i>
+                </button>
+            </div>
+            <div id="chat-messages" class="p-4 h-72 overflow-y-auto bg-stone-50 flex flex-col gap-3 text-sm">
+                <div class="bg-orange-100 text-stone-800 p-3 rounded-xl rounded-tl-sm self-start max-w-[85%] shadow-sm">
+                    ¡Hola paisanito! Soy <strong>El Huancaíno</strong> ✨, tu asistente virtual. ¿Buscas alguna
+                    recomendación o tienes dudas sobre nuestra carta?
+                </div>
+            </div>
+            <div class="p-3 bg-white border-t border-stone-200 flex gap-2 items-center">
+                <input type="text" id="chat-input" placeholder="Pregúntame sobre el menú..."
+                    class="flex-1 bg-stone-100 border border-transparent rounded-full px-4 py-2.5 focus:outline-none focus:bg-white focus:border-[#8b4513] focus:ring-1 focus:ring-[#8b4513] text-sm transition-all">
+                <button id="send-btn"
+                    class="bg-[#8b4513] text-white p-2.5 rounded-full hover:bg-[#6b350f] shadow-md transition-all transform hover:scale-105 flex items-center justify-center">
+                    <i class="ph-fill ph-paper-plane-right text-lg"></i>
+                </button>
+            </div>
+        </div>
+        <button id="chat-toggle"
+            class="bg-[#8b4513] hover:bg-[#6b350f] text-white rounded-full p-4 shadow-xl flex items-center justify-center transition-all transform hover:scale-105 group">
+            <i class="ph-fill ph-cooking-pot text-3xl group-hover:hidden"></i>
+            <i class="ph-fill ph-chat-circle-dots text-3xl hidden group-hover:block"></i>
+        </button>
+    </div>
+
+    <script>
+        const chatWindow = document.getElementById('chat-window');
+        const chatToggle = document.getElementById('chat-toggle');
+        const closeChat = document.getElementById('close-chat');
+        const chatMessages = document.getElementById('chat-messages');
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        // Toggle widget
+        chatToggle.addEventListener('click', () => {
+            chatWindow.classList.toggle('hidden');
+            chatWindow.classList.toggle('flex');
+            if (!chatWindow.classList.contains('hidden')) chatInput.focus();
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatWindow.classList.add('hidden');
+            chatWindow.classList.remove('flex');
+        });
+
+        // Lógica de chat con endpoint serverless
+        async function fetchGeminiResponse(userMessage) {
+            const systemPrompt = `Eres 'El Huancaíno', el asistente virtual y amable anfitrión del restaurante peruano 'Los Sabores de mi Tierra'.
+    NUESTRO MENÚ EXACTO (no inventes otros platos ni precios):
+    - Pachamanca a la Tierra (papa, camote, habas, humita, sabor mixto) - S/ 50.00
+    - Caja China (piel galleta, con papa, mote y sarsa criolla) - S/ 50.00
+    - Arroz con Pato (jugoso con sarsa criolla) - S/ 50.00
+    - Chicharrón de Chancho (mote, camote, cancha, sarsa criolla) - S/ 50.00
+    - Caldo de Mote (sustancioso) - S/ 25.00
+    BEBIDAS:
+    - Chicha Morada - Jarra 1L S/ 15, Vaso S/5
+    - Limonada Frozen - Jarra 1L S/ 18, Vaso S/8
+    CÓCTELES Y PROMOS, REGLAS DE COMPORTAMIENTO, MEDIOS DE PAGO: [igual que tu systemPrompt]`;
+
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: userMessage, systemPrompt })
+            });
+            const data = await response.json();
+            return data.reply;
+        }
+
+        function appendMessage(text, isUser) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `p-3 rounded-xl text-sm max-w-[85%] shadow-sm ${isUser ? 'bg-[#8b4513] text-white self-end rounded-tr-sm' : 'bg-orange-100 text-stone-800 self-start rounded-tl-sm'
+                }`;
+            msgDiv.innerHTML = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        async function handleSend() {
+            const text = chatInput.value.trim();
+            if (!text) return;
+
+            appendMessage(text, true);
+            chatInput.value = '';
+            chatInput.disabled = true;
+
+            const loadingId = 'loading-' + Date.now();
+            const loadingDiv = document.createElement('div');
+            loadingDiv.id = loadingId;
+            loadingDiv.className = 'bg-orange-50 text-stone-500 p-3 rounded-xl rounded-tl-sm self-start flex gap-1 items-center shadow-sm';
+            loadingDiv.innerHTML = `<div class="w-1.5 h-1.5 bg-stone-400 rounded-full animate-bounce"></div>
+                            <div class="w-1.5 h-1.5 bg-stone-400 rounded-full animate-bounce" style="animation-delay:0.15s"></div>
+                            <div class="w-1.5 h-1.5 bg-stone-400 rounded-full animate-bounce" style="animation-delay:0.3s"></div>`;
+            chatMessages.appendChild(loadingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            const aiResponse = await fetchGeminiResponse(text);
+
+            document.getElementById(loadingId).remove();
+            appendMessage(aiResponse, false);
+            chatInput.disabled = false;
+            chatInput.focus();
+        }
+
+        sendBtn.addEventListener('click', handleSend);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !chatInput.disabled) handleSend();
+        });
+    </script>
+</body>
+
+</html>
